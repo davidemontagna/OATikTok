@@ -22,9 +22,12 @@ class HomeViewModel: NSObject {
     // MARK: - Properties
     
     var uiitems: [HomeUIItem] {
-        [HomeUIItem(title: "Cell 1", videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")),
-         HomeUIItem(title: "Cell 2", videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4")),
-         HomeUIItem(title: "Cell 3", videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"))]
+        [HomeUIItem(title: "Cell 1",
+                    videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")),
+         HomeUIItem(title: "Cell 2",
+                    videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4")),
+         HomeUIItem(title: "Cell 3",
+                    videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"))]
     }
 }
 
