@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kze-aZ-Vcv">
                         <rect key="frame" x="0.0" y="0.0" width="379" height="529"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHk-Kr-0KZ">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHk-Kr-0KZ">
                                 <rect key="frame" x="0.0" y="0.0" width="379" height="415"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>

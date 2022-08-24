@@ -7,7 +7,6 @@
 
 import UIKit
 import AVKit
-import AVFoundation
 
 protocol PostTableViewCellDelegate {
     func followUserTapped(at index: Int)
@@ -41,8 +40,11 @@ class PostTableViewCell: UITableViewCell {
         if let url = post.videoUrl {
             player = AVPlayer(url: url)
             let layer = AVPlayerLayer(player: player)
-            layer.frame = CGRect(origin: .zero, size: CGSize(width: frame.width, height: videoView.frame.height))
+            //layer.frame = CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.height))
+            // layer.frame.size = videoView.frame.size
             videoView.layer.addSublayer(layer)
+            layer.frame = self.bounds
+            layer.videoGravity = .resizeAspectFill
         }
         self.delegate = delegate
     }

@@ -5,9 +5,7 @@
 //  Created by Davide Montagna on 01/08/22.
 //
 
-import Foundation
 import UIKit
-import AVKit
 
 protocol HomeAdapterDelegate {
     func followUserTapped(at index: Int)

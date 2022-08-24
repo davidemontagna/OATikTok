@@ -15,6 +15,8 @@ protocol HomeViewModelDelegate{
 
 class HomeViewModel: NSObject {
     
+    // MARK: - Delegate
+    
     var delegate: HomeViewModelDelegate?
     
     // MARK: - Properties
@@ -25,3 +27,4 @@ class HomeViewModel: NSObject {
          HomeUIItem(title: "Cell 3", videoUrl: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"))]
     }
 }
+
